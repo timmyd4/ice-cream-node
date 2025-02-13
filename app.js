@@ -2,7 +2,7 @@ import express from 'express';
 
 const app = express();
 
-app.use(express.urlencoded({urlencoded: true}));
+app.use(express.urlencoded({extended: true}));
 
 app.use(express.static('public'));
 

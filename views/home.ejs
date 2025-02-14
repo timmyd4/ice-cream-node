@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
     <div>
@@ -23,23 +23,26 @@
     <fieldset>
         <legend> Order Details </legend>
         <p> Choose your Flavor: </p>
-        <select name="Size" id="Size"> 
-            <option value="none">-- Select a Flavor --</option>
-            <option value="Vanilla">Vanilla</option>
-            <option value="Chocolate">Chocolate</option>
-            <option value="Strawberry">Strawberry</option>
+        <select name="Flavor" id="Flavor"> 
+            <option value="none" >-- Select a Flavor --</option>
+            <option value="Vanilla" >Vanilla</option>
+            <option value="Chocolate" >Chocolate</option>
+            <option value="Strawberry" >Strawberry</option>
         </select>
 
         <p>Choose your Cone:</p>
-        <input type="radio"> Waffle Cone
-        <input type="radio"> Sugar Cone
-        <input type="radio"> Cup
+        <input type="radio" name="cone" value="Waffle Cone"> Waffle Cone
+        <input type="radio" name="cone" value="Sugar Cone"> Sugar Cone
+        <input type="radio" name="cone" value="Cup"> Cup
 
         <p>Toppings:</p>
-        <input type="checkbox"> Sprinkles
-        <input type="checkbox"> Nuts
-        <input type="checkbox"> Cherry
-        <input type="checkbox"> Whipped Cream
+        <input type="checkbox" name="cone" value="Sprinkles"> Sprinkles
+        <input type="checkbox" name="cone" value="Nuts"> Nuts
+        <input type="checkbox" name="cone" value="Cherry"> Cherry
+        <input type="checkbox" name="cone" value="WhippedCream"> Whipped Cream
+
+        <p>Additional comments:</p>
+        <textarea></textarea>
 
     </fieldset>
     <button type="submit"> Order </button>

@@ -7,9 +7,17 @@
 </head>
 <body>
     <h1>Order Summary</h1>
-    <p>Name: <%= .Name%> </p>
-    <p>email: <%= .email%> </p>
-    <p>Flavor: <%= .Flavor%> </p>
+    <p>Name: <%= order.fname%> </p>
+    <p>email: <%= order.email%> </p>
+    <p>Flavor: <%= order.Flavor%> </p>
+    <p>Cone: <%= order.cone%> </p>
+
+    <% if (Array.isArray(order.toppings)) { %>
+        <p>Toppings: <%= order.toppings.join(', ') %></p>
+    <% } else { %>
+        <p>Toppings: <%= order.toppings %> </p>
+    <% } %>
+    
 
 </body>
 </html>
